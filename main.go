@@ -42,7 +42,7 @@ type Searcher struct {
 
 func handleSearch(searcher Searcher) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
-		// enableCors(&w)
+		enableCors(&w)
 		query, ok := r.URL.Query()["q"]
 		if !ok || len(query[0]) < 1 {
 			w.WriteHeader(http.StatusBadRequest)
@@ -80,4 +80,8 @@ func (s *Searcher) Search(query string) []string {
 		results = append(results, s.CompleteWorks[idx-250:idx+250])
 	}
 	return results
+}
+
+func enableCors(w *http.ResponseWriter) {
+	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }

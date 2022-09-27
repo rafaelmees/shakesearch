@@ -1,3 +1,4 @@
+import { createTheme, ThemeProvider } from '@mui/material'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -12,5 +13,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

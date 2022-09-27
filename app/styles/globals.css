@@ -4,3 +4,9 @@ body {
   margin: 0;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 }
+
+.highlightedText {
+  color: #000000;
+  background-color: #FFF59D;
+  padding: 2px;
+}
