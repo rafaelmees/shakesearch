@@ -42,6 +42,7 @@ type Searcher struct {
 
 func handleSearch(searcher Searcher) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
+		// enableCors(&w)
 		query, ok := r.URL.Query()["q"]
 		if !ok || len(query[0]) < 1 {
 			w.WriteHeader(http.StatusBadRequest)
