@@ -20,8 +20,7 @@ const Home: NextPage = () => {
       return;
     }
     setIsLoading(true);
-    // await fetch(`/search?q=${searchText}`).then(async (response: Response) => {
-    await fetch(`http://localhost:3001/search?q=${searchText}`).then(async (response: Response) => {
+    await fetch(`/search?q=${searchText}`).then(async (response: Response) => {
       let results = await response.json();
       setResults(results);
     });
