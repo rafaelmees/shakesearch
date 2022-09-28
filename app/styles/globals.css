@@ -10,3 +10,31 @@ body {
   background-color: #FFF59D;
   padding: 2px;
 }
+
+.quote {
+  position: relative;
+  overflow: hidden;
+}
+
+.quote:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(0, 0, 0, 0.05);
+  font-weight: normal;
+}
+
+.quote:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: 25px;
+  font-size: 22em;
+  color: rgba(0, 0, 0, 0.05);
+  font-weight: normal;
+}

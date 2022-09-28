@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "18.7.21",
+    "@types/react-highlight-words": "^0.16.4",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1"
   }
