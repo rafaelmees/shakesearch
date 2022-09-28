@@ -29,3 +29,17 @@ We will be primarily evaluating based on how well the search works for users. A 
 2. Heroku hosting - The project includes a Heroku Procfile and, in its
    current state, can be deployed easily on Heroku's free tier.
 3. In your submission, share with us what changes you made and how you would prioritize changes if you had more time.
+
+## My changes
+
+### Search
+* Added regexp, so it'll works without case sensitive.
+* Fixed word wrapping. The search will only return complete lines.
+* Removed repetition of occurrences. If a result returns more than one occurrence, they will not be returned again in another result.
+
+### UI
+* Made with Next.js.
+* Responsive layout.
+* Applied Material Design with Material.UI package.
+* Text highlight on the search occurrences.
+* Added icon and logo.
